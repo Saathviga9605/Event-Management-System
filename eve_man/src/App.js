@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './admin_dashboard_styles.css';
+import './App.css';
 import ssnLogo from './ssnLogo.png';
 import ssnCampus from './ssn_campus.jpeg';
 
