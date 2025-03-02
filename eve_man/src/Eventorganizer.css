@@ -1,0 +1,139 @@
+/* Main Container */
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  .dashboard-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #005096;
+    margin-bottom: 30px;
+  }
+  
+  /* Event Grid Layout */
+  .event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    grid-template-areas: 
+        "upcoming pending"
+        "approved history";
+  }
+  
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "upcoming"
+            "pending"
+            "approved"
+            "history";
+    }
+  }
+  
+  /* Assign grid areas */
+  .upcoming-events { grid-area: upcoming; }
+  .pending-events { grid-area: pending; }
+  .approved-events { grid-area: approved; }
+  .event-history { grid-area: history; }
+  
+  /* Event Card Styling */
+  .event-card {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Event Header */
+  .event-header {
+    background: linear-gradient(90deg, #005096, #0088CC);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Event Item */
+  .event-item {
+    background-color: #f9f9f9;
+    border-left: 4px solid #005096;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .approve-button, .reject-button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    min-width: 100px;
+    transition: all 0.3s ease;
+  }
+  
+  .approve-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .reject-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .approve-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .reject-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
+  /* Event History */
+  .event-history {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  

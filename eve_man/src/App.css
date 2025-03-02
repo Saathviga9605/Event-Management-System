@@ -1,6 +1,4 @@
-/* Existing CSS */
 
-/* General Reset */
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Navbar Styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,7 +48,6 @@ body {
   outline: none;
 }
 
-/* Logout Button */
 .logout-button {
   background-color: #0088CC;
   color: white;
@@ -70,12 +67,10 @@ body {
   transform: translate(2px, 2px);
 }
 
-/* Main Container */
 .dashboard-container {
   padding: 20px;
 }
 
-/* Header Styling */
 .dashboard-title {
   font-size: 3rem;
   text-align: center;
@@ -83,13 +78,12 @@ body {
   margin-bottom: 30px;
 }
 
-/* Event Grid - Centered Layout */
-/* Event Grid Layout */
+
 .event-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  grid-template-rows: auto auto; /* Two rows */
-  gap: 20px; /* Gap between cards */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; 
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
@@ -98,7 +92,6 @@ body {
       "approved history";
 }
 
-/* Assign grid areas to specific cards */
 .upcoming-events {
   grid-area: upcoming;
 }
@@ -115,7 +108,7 @@ body {
   grid-area: history;
 }
 
-/* Ensure responsiveness for smaller screens */
+
 @media (max-width: 768px) {
   .event-grid {
       grid-template-columns: 1fr;
@@ -127,7 +120,6 @@ body {
   }
 }
 
-/* Assign grid areas to specific cards */
 .upcoming-events {
   grid-area: upcoming;
 }
@@ -144,7 +136,7 @@ body {
   grid-area: history;
 }
 
-/* Ensure responsiveness for smaller screens */
+
 @media (max-width: 768px) {
   .event-grid {
       grid-template-columns: 1fr;
@@ -157,7 +149,7 @@ body {
 }
 
 
-/* Event Card - Modern Look */
+
 .event-card {
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
   border-radius: 15px;
@@ -173,7 +165,6 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Event Header - Gradient Background */
 .event-header {
   background: linear-gradient(90deg, #005096, #0088CC);
   color: white;
@@ -185,7 +176,6 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Event Item - Clean & Elegant */
 .event-item {
   background-color: #f9f9f9;
   border-left: 4px solid #005096;
